@@ -7,6 +7,7 @@
     "dev:client": "vite dev --port 5000",
     "dev": "NODE_ENV=development tsx server/index.ts",
     "build": "vite build && tsx script/build.ts",
+    "vercel-build": "vite build && tsx script/build.ts",
     "start": "NODE_ENV=production node dist/index.cjs",
     "db:push": "drizzle-kit push --force",
     "postinstall": "npm run build",

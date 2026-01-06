@@ -1,43 +1,17 @@
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# Build outputs
-dist/
-build/
-*.tsbuildinfo
-
-# Environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-logs/
+node_modules
+dist
+.replit
+replit.nix
+.apt
+.cache
+.config
+.local
+.npm
+.nix-profile
+.replit-cartographer
 *.log
-
-# Testing
-coverage/
-
-# Temporary files
-*.tmp
-.cache/
-
-# Drizzle migrations
-migrations/
+.env
+attached_assets
+Windows-13
+zipFile.zip
+Windows-13-simulator.tar_1764607399060.gz
