@@ -75,20 +75,26 @@ Download and install additional apps directly from the App Store:
 - PostgreSQL + Drizzle ORM
 - WebSockets support
 
+## Deployment to Vercel
+
+1. **GitHub**: Push this repository to a new GitHub repository.
+2. **Vercel Import**: In Vercel, click "Add New" > "Project" and import your GitHub repo.
+3. **Framework Preset**: Select **Vite** (or Other if not detected).
+4. **Build Settings**:
+   - **Build Command**: `npm run vercel-build`
+   - **Output Directory**: `dist/public`
+   - **Install Command**: `npm install`
+5. **Environment Variables**:
+   - `SESSION_SECRET`: Any random string (required).
+   - `DATABASE_URL`: Your PostgreSQL connection string (optional, for persistence).
+
 ## Project Structure
 
-```
-├── client/              # React frontend
-│   ├── src/
-│   │   ├── components/  # UI components
-│   │   ├── pages/       # Page routes
-│   │   ├── hooks/       # React hooks
-│   │   └── lib/         # Utilities
-│   └── public/          # Static assets
-├── server/              # Express backend
-├── shared/              # Shared types and schemas
-└── script/              # Build scripts
-```
+- `client/`: Frontend (React + Vite)
+- `server/`: Backend (Express)
+- `shared/`: Shared TypeScript schemas
+- `dist/`: Build output (public assets + compiled server)
+- `vercel.json`: Vercel routing configuration
 
 ## Development
 
